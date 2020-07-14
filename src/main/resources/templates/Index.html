@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Index</title>
-<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<link th:href="@{/css/estilo.css}" href="css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body class="body">
 			<div class="title">
@@ -12,8 +12,8 @@
 			<div>
 				<nav class="nav">
 					<a href="Index.html" class="nav-link" >Home</a> 
-					<a href="templates/fixture.html" class="nav-link" >Fixture</a>
-					<a class="nav-link" href="equipos.html">Equipos</a>
+					<a href="../fixture.html" class="nav-link" >Fixture</a>
+					<a href="equipos.html" class="nav-link" >Equipos</a>
 				</nav>
 			</div>
 	<div class="row">
@@ -21,7 +21,7 @@
 					<div><h2>Noticias</h2></div>
 				<div class="card-deck">
 						<div class="card col-4">
-							<img src="../img/Noticia1.jpg" class="card-img" alt="Noticia3">
+							<img th:src="@{/img/Noticia1.jpg}" src="../img/Noticia1.jpg" class="card-img" alt="Noticia3">
 							<div class="card-body">
 								<h3>12/03/20</h3>
 								<p>Nueva noticia de los partidos suspendidos en la cuarentena</p>							
